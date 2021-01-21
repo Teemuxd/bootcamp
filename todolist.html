@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      ul {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: Verdana;
+        margin-left: 0px;
+        padding-left: 0px;
+      }
+      li {
+        padding: 10px;
+        /* border-bottom: 1px dotted; */
+        /* border-top: 1px dotted; */
+        list-style: none;
+        margin-left: 0px;
+      }
+      li:hover {
+        background: grey;
+      }
+    </style>
+    <script>
+      // Type your own function here
+      function validate() {
+        // Hae input kentän arvo
+        var newtask = document.querySelector("input").value;
+        // Etsi listan paikka sivulta
+        var list = document.getElementById("todolist");
+
+        // Lisätään uusi asia listan loppuun
+        // list.innerHTML += '<li>'+newtask+'</li>';
+        list.innerHTML += `<li>${newtask}</li>`;
+        //return false;
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- form name="form1" onsubmit="return validate()" -->
+    What to do: <input type="text" name="todo" /><br />
+    <input type="button" onclick="validate();" value="Add" />
+    <!-- /form -->
+
+    <h1>Things to do:</h1>
+    <ul id="todolist"></ul>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+h1 {
+  font-family: Verdana, Arial, courier;
+  font-size: 50px;
+}
+
+body {
+  background-color: powderblue;
+}
+table,
+td {
+  border: 1px solid black;
+}
+
+.leipateksi {
+  color: red;
+  font-weight: bold;
+}
+#erikoisteksti {
+  color: darkgoldenrod;
+  text-align: right;
+}
